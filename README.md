@@ -17,7 +17,7 @@ You must implement five foundational sorting algorithms to sort a list of Transa
 ### Task 2: Transaction Auditing (`searching_engine.py`)
 You must implement two critical search operations to find a specific transaction value within your ledger:
 * **Linear Search (O(n)):** Scans unsorted logs sequentially.
-* **Binary Search (O(\log n)):** Fast divide-and-conquer strategy on pre-sorted ledgers.
+* **Binary Search (O(log n)):** Fast divide-and-conquer strategy on pre-sorted ledgers.
 
 ---
 

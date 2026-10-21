@@ -1,7 +1,6 @@
-```python
 """
 Module 4: Sorting Engine Optimization
-Implement all five algorithms to sort lists of integers/floats in ascending order.
+Implement core sorting algorithms to sort lists in ascending order.
 Do NOT use Python's built-in .sort() or sorted().
 """
 
@@ -12,26 +11,22 @@ Do NOT use Python's built-in .sort() or sorted().
 def bubble_sort(arr: list) -> list:
     """
     TODO: Implement Bubble Sort.
-    Iteratively step through the list, compare adjacent elements, and swap them.
-    """
-    # YOUR CODE HERE
-    pass
-
-def selection_sort(arr: list) -> list:
-    """
-    TODO: Implement Selection Sort.
-    Maintain a sorted boundary and repeatedly find the minimum element 
-    from the unsorted section to swap it to the front.
+    1. Use nested loops to compare adjacent elements.
+    2. If arr[j] > arr[j+1], swap them.
+    3. Return arr.
     """
     # YOUR CODE HERE
     pass
 
 def insertion_sort(arr: list) -> list:
-    ```
+    """
     TODO: Implement Insertion Sort.
-    Build the final sorted list one item at a time by consuming one input 
-    element per repetition and inserting it into its correct relative spot.
-    ```
+    1. Loop from i = 1 to len(arr)-1.
+    2. Store current element as `key = arr[i]` and `j = i - 1`.
+    3. While j >= 0 and arr[j] > key: shift arr[j] to the right (arr[j+1] = arr[j]), then decrement j.
+    4. Insert key into its correct spot: arr[j+1] = key.
+    5. Return arr.
+    """
     # YOUR CODE HERE
     pass
 
@@ -42,8 +37,10 @@ def insertion_sort(arr: list) -> list:
 def merge_sort(arr: list) -> list:
     """
     TODO: Implement Merge Sort (Divide and Conquer).
-    Recursively split the array in half, sort the halves, and merge them back together.
-    Returns a new sorted list.
+    1. Base case: if len(arr) <= 1, return arr.
+    2. Split array into left and right halves.
+    3. Recursively call merge_sort on both halves.
+    4. Merge the two sorted halves into a single sorted list and return it.
     """
     # YOUR CODE HERE
     pass
@@ -51,8 +48,13 @@ def merge_sort(arr: list) -> list:
 def quick_sort(arr: list) -> list:
     """
     TODO: Implement Quick Sort.
-    Pick a pivot element, partition the remaining elements into sub-arrays 
-    of smaller and larger values, and recursively sort the sub-arrays.
+    1. Base case: if len(arr) <= 1, return arr.
+    2. Choose a pivot (e.g., the middle element or last element).
+    3. Partition elements into three lists: 
+       - smaller than pivot
+       - equal to pivot
+       - greater than pivot
+    4. Recursively sort smaller and greater lists, then combine with equal list.
     """
     # YOUR CODE HERE
     pass

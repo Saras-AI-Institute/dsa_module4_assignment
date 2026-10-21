@@ -4,7 +4,7 @@ import sys
 # Increase recursion depth for unoptimized quick sort on sorted arrays if necessary
 sys.setrecursionlimit(5000)
 
-from sorting_engine import bubble_sort, selection_sort, insertion_sort, merge_sort, quick_sort
+from sorting_engine import bubble_sort, insertion_sort, merge_sort, quick_sort
 
 def run_benchmarks():
     sizes = [100, 500, 2000]
@@ -13,7 +13,6 @@ def run_benchmarks():
 
     algorithms = {
         "Bubble Sort": bubble_sort,
-        "Selection Sort": selection_sort,
         "Insertion Sort": insertion_sort,
         "Merge Sort": merge_sort,
         "Quick Sort": quick_sort
